@@ -1,0 +1,59 @@
+.project-detail{
+    display: flex;
+  flex-direction: column;
+  align-items: center;   /* centers horizontally */
+  justify-content: center;
+  text-align: center;
+  max-width: 900px;
+  margin: auto;
+  padding: 40px;
+  border-radius:15px;
+background:rgba(0,0,0,0.3);  /* transparent glass */
+    backdrop-filter:blur(4px);
+
+    border:1px solid rgba(255,255,255,0.1);
+  
+
+}
+.project-title{
+    border-radius:15px;
+background:rgba(0,0,0,0.3);  /* transparent glass */
+    backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,0.1);
+}
+
+.project-img{
+    border-radius:15px;
+background:rgba(0,0,0,0.3);  /* transparent glass */
+    backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,0.1);
+}
+
+.desc{
+      text-align:center;
+    padding:100px 20px;
+    max-width:900px;
+    margin:60px auto;
+    padding:40px;
+    border-radius:15px;
+
+    background:rgba(0,0,0,0.3);  /* transparent glass */
+    backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,0.1);
+}
+
+.des-buttons button{
+    margin:10px;
+    padding:12px 25px;
+    border-radius:10px;
+    border:1px solid rgba(255,255,255,0.2);
+    background:rgba(255,255,255,0.05);
+    backdrop-filter:blur(10px);
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    transition:all 0.3s ease;
+}

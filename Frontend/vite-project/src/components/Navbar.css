@@ -1,0 +1,47 @@
+nav{
+  display: flex;                      /* Makes the navbar use Flexbox layout so items can align in a row */ 
+  justify-content: space-between;     /* Pushes items to opposite sides (logo left, menu right) */
+  align-items: center;                /* Vertically centers the items inside the navbar */
+  background-color: black;          /* Sets the background color of the navbar to black */
+  color: white;                     /* Makes all text inside the navbar white */
+  padding: 15px 40px;                 /* Adds space inside the navbar  15px = top & bottom   40px = left & right */
+  position: sticky;                   /* Makes navbar stick while scrolling */
+  top: 0;                             /* Stick to the top of page */
+  width: 100%;                        /* Makes navbar stretch across the full screen */
+  box-sizing: border-box;             /* Prevents padding from increasing width */
+  z-index: 1000;                      /* Keeps navbar above other elements */
+}
+
+ul{
+  display: flex;                     /* Makes the list items appear in a row instead of vertically */
+  list-style: none;                  /* Removes default bullet points from the list */
+  gap: 20px;                         /* Adds 20px space between each menu item */
+  margin: 0;                         /* Removes default margin */
+  padding: 0;                        /* Removes default padding */
+}
+
+
+li{
+  cursor: pointer;                   /* Changes the mouse cursor to a hand when hovering over menu items */
+}
+
+nav h1{
+  margin: 0;                       /* Removes the default margin that browsers add to <h1>. This prevents extra space above and below the navbar title. */
+  font-size: 24px;                /* Sets the size of the heading text to 24 pixels so the navbar title is not too large. */
+}
+
+@media (max-width:600px){
+
+  nav{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+
+  ul{
+    flex-direction:column;
+    width:100%;
+    gap:10px;
+    margin-top:10px;
+  }
+
+}

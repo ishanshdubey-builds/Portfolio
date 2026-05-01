@@ -1,0 +1,39 @@
+.resume-container{
+max-width:900px;
+margin:auto;
+padding:40px;
+color:white;
+}
+
+.resume-container{
+    
+
+    border-radius:15px;
+
+    background:rgba(0,0,0,0.3);  /* transparent glass */
+    backdrop-filter:blur(12px);
+
+    border:1px solid rgba(255,255,255,0.1);
+}
+
+.resume-section{
+margin-top:30px;
+}
+
+.resume-section h2{
+border-bottom:2px solid #444;
+padding-bottom:5px;
+}
+
+.resume-section ul{
+list-style:none;
+padding:0;
+}
+
+.resume-section li{
+margin-bottom:8px;
+}
+
+.resume-download{
+margin-top:40px;
+}

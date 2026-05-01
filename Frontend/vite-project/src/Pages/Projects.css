@@ -1,0 +1,88 @@
+.projects{
+    display: flex;
+  flex-direction: column;
+  align-items: center;   /* centers horizontally */
+  justify-content: center;
+  text-align: center;
+  max-width: 900px;
+  margin: auto;
+  padding: 40px;
+  border-radius:15px;
+
+    background:rgba(0,0,0,0.3);  /* transparent glass */
+    backdrop-filter:blur(4px);
+
+    border:1px solid rgba(255,255,255,0.1);
+
+}
+.my-project{
+    border-radius:15px;
+
+    background:rgba(0,0,0,0.3);  /* transparent glass */
+    backdrop-filter:blur(8px);
+
+    border:1px solid rgba(255,255,255,0.1);
+
+}
+/* container that holds all project cards */
+.projects-container{
+  display:flex;
+  gap:20px;
+  /* overflow-x:auto; */
+  padding:20px;
+}
+
+/* individual project card */
+.project-card{
+  position:relative;
+  width:250px;
+  height:150px;
+  cursor:pointer;
+  transition:transform 0.3s ease;
+}
+
+/* image inside the card */
+.project-image{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  border-radius:6px;
+}
+
+/* zoom effect when hovering */
+.project-card:hover{
+  transform:scale(1.2);
+  z-index:10;
+}
+
+/* overlay that shows project info */
+.project-info{
+  position:absolute;
+  bottom:0;
+  left:0;
+  right:0;
+  background:rgba(0,0,0,0.8);
+  color:white;
+  padding:10px;
+  opacity:0;
+  transition:opacity 0.3s ease;
+}
+
+/* show info when hovering */
+.project-card:hover .project-info{
+  opacity:1;
+}
+
+@media (max-width:600px){
+
+  .projects-container{
+    flex-direction:column;
+    align-items:center;
+  }
+
+  .project-card{
+    width:90%;
+    height:180px;
+  }
+
+}
