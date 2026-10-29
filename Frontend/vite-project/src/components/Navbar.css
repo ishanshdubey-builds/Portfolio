@@ -1,47 +1,25 @@
-nav{
-  display: flex;                      /* Makes the navbar use Flexbox layout so items can align in a row */ 
-  justify-content: space-between;     /* Pushes items to opposite sides (logo left, menu right) */
-  align-items: center;                /* Vertically centers the items inside the navbar */
-  background-color: black;          /* Sets the background color of the navbar to black */
-  color: white;                     /* Makes all text inside the navbar white */
-  padding: 15px 40px;                 /* Adds space inside the navbar  15px = top & bottom   40px = left & right */
-  position: sticky;                   /* Makes navbar stick while scrolling */
-  top: 0;                             /* Stick to the top of page */
-  width: 100%;                        /* Makes navbar stretch across the full screen */
-  box-sizing: border-box;             /* Prevents padding from increasing width */
-  z-index: 1000;                      /* Keeps navbar above other elements */
+.site-header { position: sticky; top: 0; z-index: 1000; background: rgba(17,19,15,.82); backdrop-filter: blur(18px); border-bottom: 1px solid var(--line); }
+.site-nav { min-height: 78px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+.brand-mark { display: inline-flex; align-items: center; gap: 11px; min-width: 210px; }
+.brand-symbol { display: grid; place-items: center; width: 37px; height: 37px; background: var(--accent); color: var(--bg); font-size: 24px; font-weight: 800; letter-spacing: -.11em; }
+.brand-symbol span { color: #566b3e; }
+.brand-name { display: flex; flex-direction: column; gap: 4px; font-size: 10px; font-weight: 800; letter-spacing: .1em; }
+.brand-name small { font: 8px var(--mono); font-weight: 400; color: var(--muted); letter-spacing: .08em; }
+.nav-links { display: flex; gap: clamp(17px, 2.6vw, 34px); align-items: center; }
+.nav-links a { color: var(--muted); font-size: 11px; transition: color .2s; }
+.nav-links a:hover, .nav-links a.active { color: var(--accent); }
+.nav-contact { min-height: 38px; display: inline-flex; align-items: center; gap: 10px; border: 1px solid var(--line); padding: 0 13px; color: var(--text); font-size: 10px; font-weight: 700; white-space: nowrap; transition: border-color .2s, color .2s; }
+.nav-contact:hover { color: var(--accent); border-color: var(--accent); }
+.nav-contact svg { color: var(--accent); font-size: 10px; }
+@media (max-width: 760px) {
+  .site-nav { min-height: 70px; flex-wrap: wrap; padding-top: 12px; padding-bottom: 12px; gap: 12px; }
+  .brand-mark { min-width: 0; }
+  .brand-name { font-size: 9px; }
+  .nav-contact { display: none; }
+  .nav-links { gap: 16px; }
+  .nav-links a { font-size: 10px; }
 }
-
-ul{
-  display: flex;                     /* Makes the list items appear in a row instead of vertically */
-  list-style: none;                  /* Removes default bullet points from the list */
-  gap: 20px;                         /* Adds 20px space between each menu item */
-  margin: 0;                         /* Removes default margin */
-  padding: 0;                        /* Removes default padding */
-}
-
-
-li{
-  cursor: pointer;                   /* Changes the mouse cursor to a hand when hovering over menu items */
-}
-
-nav h1{
-  margin: 0;                       /* Removes the default margin that browsers add to <h1>. This prevents extra space above and below the navbar title. */
-  font-size: 24px;                /* Sets the size of the heading text to 24 pixels so the navbar title is not too large. */
-}
-
-@media (max-width:600px){
-
-  nav{
-    flex-direction:column;
-    align-items:flex-start;
-  }
-
-  ul{
-    flex-direction:column;
-    width:100%;
-    gap:10px;
-    margin-top:10px;
-  }
-
+@media (max-width: 430px) {
+  .site-nav { align-items: center; }
+  .nav-links { order: 3; width: 100%; justify-content: space-between; border-top: 1px solid var(--line); padding-top: 12px; }
 }
