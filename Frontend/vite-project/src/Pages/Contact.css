@@ -1,0 +1,13 @@
+.contact-page { padding-bottom: 110px; }
+.contact-page .page-intro { padding-bottom: 24px; }
+.contact-methods { max-width: 780px; border-top: 1px solid var(--line); }
+.contact-methods > a { display: grid; grid-template-columns: 48px 1fr 18px; gap: 20px; align-items: center; padding: 24px 0; border-bottom: 1px solid var(--line); }
+.contact-method-icon { display: grid; place-items: center; width: 46px; height: 46px; border: 1px solid var(--line); color: var(--accent); font-size: 19px; }
+.contact-methods > a > div { display: flex; flex-direction: column; gap: 5px; }
+.contact-methods small { color: var(--accent); font: 9px var(--mono); letter-spacing: .14em; }
+.contact-methods strong { font-size: 15px; font-weight: 700; }
+.contact-methods p { margin: 0; color: var(--muted); font-size: 11px; }
+.contact-methods > a > svg { color: var(--muted); font-size: 13px; transition: transform .2s, color .2s; }
+.contact-methods > a:hover > svg { color: var(--accent); transform: translate(3px, -3px); }
+.contact-methods > a:hover strong { color: var(--accent); }
+@media (max-width: 550px) { .contact-methods > a { grid-template-columns: 40px 1fr 15px; gap: 13px; } .contact-method-icon { width: 40px; height: 40px; } .contact-methods strong { font-size: 12px; } }
