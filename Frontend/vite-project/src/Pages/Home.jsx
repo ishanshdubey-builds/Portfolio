@@ -48,10 +48,10 @@ function Home() {
 
   <div className="portrait-shade" />
 
-  <div className="portrait-topline">
+  {/* <div className="portrait-topline">
     <span>THE PERSON BEHIND THE CODE</span>
     <span>01 / 01</span>
-  </div>
+  </div> */}
 
   <div className="portrait-caption">
     <span>ISHANSH DUBEY</span>
