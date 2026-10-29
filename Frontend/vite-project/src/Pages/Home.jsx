@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { FaArrowDown, FaArrowUpRightFromSquare, FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa6";
+import { FaArrowDown, FaArrowUpRightFromSquare, FaGithub, FaLinkedin } from "react-icons/fa6";
 import projects from "../data/projects";
 import "./Home.css";
 
@@ -36,7 +36,6 @@ function Home() {
           <div className="hero-socials" aria-label="Social links">
             <a href="https://github.com/ishanshdubey-builds" target="_blank" rel="noreferrer"><FaGithub /> GitHub</a>
             <a href="https://www.linkedin.com/in/ishansh-dubey-877b3438b" target="_blank" rel="noreferrer"><FaLinkedin /> LinkedIn</a>
-            <a href="mailto:ishansh.dubey@example.com"><FaEnvelope /> Email</a>
           </div>
         </div>
 
@@ -134,7 +133,7 @@ function Home() {
           <h2>Let’s make something<br /><span className="serif-accent">worth opening.</span></h2>
           <p>I’m open to learning opportunities, internships, and collaborating on interesting projects.</p>
           <div className="contact-actions">
-            <a className="button" href="mailto:ishansh.dubey@example.com">Say hello <FaEnvelope /></a>
+            <Link className="button" to="/contact">Get in touch <FaArrowUpRightFromSquare /></Link>
             <Link className="button button-quiet" to="/contact">Contact page <FaArrowUpRightFromSquare /></Link>
           </div>
         </div>
