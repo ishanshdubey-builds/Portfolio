@@ -40,24 +40,21 @@ function Home() {
         </div>
 
         <div className="hero-portrait">
-  <img
-    src="/images/ishansh.png"
-    alt="Portrait of Ishansh Dubey"
-    className="portrait-photo"
-  />
-
-  <div className="portrait-shade" />
-
-  <div className="portrait-topline">
-    <span>THE PERSON BEHIND THE CODE</span>
-    <span>01 / 01</span>
-  </div>
-
-  <div className="portrait-caption">
-    <span>ISHANSH DUBEY</span>
-    <span>MCA · SOFTWARE DEVELOPER</span>
-  </div>
-</div>
+          <img
+            src="/images/ishansh.png"
+            alt="Portrait of Ishansh Dubey"
+            className="portrait-photo"
+          />
+          <div className="portrait-shade" />
+          <div className="portrait-topline">
+            <span>THE PERSON BEHIND THE CODE</span>
+            <span>01 / 01</span>
+          </div>
+          <div className="portrait-caption">
+            <span>ISHANSH DUBEY</span>
+            <span>MCA · SOFTWARE DEVELOPER</span>
+          </div>
+        </div>
 
         <a className="scroll-cue" href="#about"><span>SCROLL TO EXPLORE</span><FaArrowDown /></a>
         <div className="hero-index"><span>01</span><i /> A WORK IN PROGRESS, ALWAYS.</div>
@@ -109,20 +106,15 @@ function Home() {
                 </Link>
                 <div className="home-project-meta"><span>PROJECT 0{index + 1}</span><span>{project.title}</span></div>
                 <h3>{project.title}</h3>
-               <p>{(project.description || "").split("\n")[0]}</p>
-
-<div className="project-tech-list">
-  {(project.technologies || []).map((technology) => (
-    <span key={technology}>{technology}</span>
-  ))}
-</div>
-
-<Link
-  className="text-link"
-  to={`/project/${project.id}`}
->
-  Explore project <span>↗</span>
-</Link>
+                <p>{(project.description || "").split("\n")[0]}</p>
+                <div className="project-tech-list">
+                  {(project.technologies || []).map((technology) => (
+                    <span key={technology}>{technology}</span>
+                  ))}
+                </div>
+                <Link className="text-link" to={`/project/${project.id}`}>
+                  Explore project <span>↗</span>
+                </Link>
               </article>
             ))}
           </div>
