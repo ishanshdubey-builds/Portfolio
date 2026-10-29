@@ -1,5 +1,14 @@
 .projects-page { padding-bottom: 90px; }
 .projects-page .page-intro { padding-bottom: 34px; }
 .projects-container { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; padding-bottom: 50px; }
+.gallery-card { min-width: 0; border: 1px solid var(--line); background: rgba(25,28,22,.55); transition: border-color .25s, transform .25s; }
+.gallery-card:hover { border-color: rgba(196,226,139,.55); transform: translateY(-4px); }
+.gallery-visual { display: block; }
+.gallery-visual .project-art { aspect-ratio: 1.15 / 1; min-height: 210px; border: 0; }
+.gallery-card-content { padding: 18px 18px 21px; }
+.gallery-card-top { display: flex; justify-content: space-between; gap: 10px; color: var(--muted); font: 8px var(--mono); letter-spacing: .09em; }
+.gallery-card-top span:last-child { text-align: right; }
+.gallery-card h2 { margin: 15px 0 9px; font-size: 20px; letter-spacing: -.05em; }
+.gallery-card p { min-height: 69px; margin: 0 0 15px; color: var(--muted); font-size: 11px; line-height: 1.85; }
 @media (max-width: 850px) { .projects-container { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-@media (max-width: 560px) { .projects-container { grid-template-columns: 1fr; gap: 18px; } }
+@media (max-width: 560px) { .projects-container { grid-template-columns: 1fr; gap: 18px; } .gallery-card p { min-height: 0; } }
