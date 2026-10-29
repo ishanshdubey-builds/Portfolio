@@ -1,5 +1,5 @@
 import "./Footer.css";
-import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 function Footer() {
   return (
@@ -9,7 +9,6 @@ function Footer() {
         <div className="footer-links" aria-label="Social links">
           <a href="https://github.com/ishanshdubey-builds" target="_blank" rel="noreferrer" aria-label="GitHub"><FaGithub /></a>
           <a href="https://www.linkedin.com/in/ishansh-dubey-877b3438b" target="_blank" rel="noreferrer" aria-label="LinkedIn"><FaLinkedin /></a>
-          <a href="mailto:ishansh.dubey@example.com" aria-label="Email"><FaEnvelope /></a>
         </div>
       </div>
     </footer>
