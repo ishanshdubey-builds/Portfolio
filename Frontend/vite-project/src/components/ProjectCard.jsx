@@ -1,43 +1,25 @@
-//Main Purpose of ProjectCard.jsx The file’s job is to: Receive project data (title, description, links) Display that data inside a card UI Be reused for every project So one component can create many cards.
-
-// importing React
-import React from "react";
-
-// importing Link from react-router-dom to navigate between pages
 import { Link } from "react-router-dom";
+import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 
-// creating the card component
-function ProjectCard({ project }) {
-
+function ProjectCard({ project, index = 0 }) {
   return (
-
-    <div className="project-card"> {/* card container */}
-
-      <img
-        src={project.image} // project image
-        alt={project.title}
-        className="project-image"
-      />
-
-      <div className="project-info">
-
-        <h3>{project.title}</h3> {/* project title */}
-
-        {/* <p>{project.description}</p> short description */}
-
-        {/* Link navigates to project detail page using project id */}
-        <Link to={`/project/${project.id}`}>
-
-          <button>View Project</button>
-
-        </Link>
-
+    <article className="gallery-card">
+      <Link className="gallery-visual" to={`/project/${project.id}`} aria-label={`View ${project.title}`}>
+        <div className={`project-art project-art-${(index % 3) + 1}`}>
+          <span className="project-art-index">SELECTED WORK / {String(index + 1).padStart(2, "0")}</span>
+          <span className="project-art-glyph">{index % 3 === 0 ? "✳" : index % 3 === 1 ? "⌘" : "◒"}</span>
+          <span className="project-art-title">{project.title}</span>
+          <span className="project-art-open"><FaArrowUpRightFromSquare /></span>
+        </div>
+      </Link>
+      <div className="gallery-card-content">
+        <div className="gallery-card-top"><span>PROJECT {String(index + 1).padStart(2, "0")}</span><span>{project.title}</span></div>
+        <h2>{project.title}</h2>
+        <p>{(project.description || "").split("\n")[0]}</p>
+        <Link className="text-link" to={`/project/${project.id}`}>View details <span>↗</span></Link>
       </div>
-
-    </div>
-
+    </article>
   );
-
 }
 
 export default ProjectCard;
