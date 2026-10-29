@@ -124,3 +124,30 @@ footer { padding: 28px 0 36px; border-top: 1px solid var(--line); }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
 }
+
+/* Project technology tags */
+.project-tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin: 14px 0 18px;
+}
+
+.project-tech-list span {
+  display: inline-block;
+  border: 1px solid var(--line);
+  padding: 7px 9px;
+  color: var(--muted);
+  background: rgba(196, 226, 139, 0.035);
+  font-family: var(--mono);
+  font-size: 9px;
+  line-height: 1.4;
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.project-tech-list span:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}

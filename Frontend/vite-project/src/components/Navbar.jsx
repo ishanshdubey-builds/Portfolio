@@ -14,7 +14,7 @@ function Navbar() {
           <NavLink to="/" end>Home</NavLink>
           <a href="/#about">About</a>
           <NavLink to="/projects">Projects</NavLink>
-          <NavLink to="/resume">Résumé</NavLink>
+          <NavLink to="/resume">Resume</NavLink>
         </div>
         <Link className="nav-contact" to="/contact">Let’s talk <FaArrowUpRightFromSquare /></Link>
       </nav>

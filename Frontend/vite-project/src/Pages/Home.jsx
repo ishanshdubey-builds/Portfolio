@@ -4,10 +4,10 @@ import projects from "../data/projects";
 import "./Home.css";
 
 const skills = [
-  { group: "Languages", items: ["JavaScript", "Java", "Python", "SQL"] },
-  { group: "Frontend", items: ["React", "HTML", "CSS", "Responsive UI"] },
+  { group: "Languages", items: ["JavaScript", "Java", "SQL"] },
+  { group: "Frontend", items: ["React", "HTML"] },
   { group: "Backend & data", items: ["Node.js", "Express", "REST APIs", "MongoDB"] },
-  { group: "Tools", items: ["Git", "GitHub", "Postman", "Vite"] },
+  { group: "Tools", items: ["Git", "GitHub", "Postman"] },
 ];
 
 function Home() {
@@ -31,7 +31,7 @@ function Home() {
           </p>
           <div className="hero-actions">
             <Link className="button" to="/projects">Explore my work <FaArrowUpRightFromSquare /></Link>
-            <Link className="button button-quiet" to="/resume">View résumé</Link>
+            <Link className="button button-quiet" to="/resume">View resume</Link>
           </div>
           <div className="hero-socials" aria-label="Social links">
             <a href="https://github.com/ishanshdubey-builds" target="_blank" rel="noreferrer"><FaGithub /> GitHub</a>
@@ -39,7 +39,7 @@ function Home() {
           </div>
         </div>
 
-        <div className="hero-art" aria-label="Abstract portfolio illustration">
+        {/* <div className="hero-art" aria-label="Abstract portfolio illustration">
           <div className="art-topline"><span>PERSONAL PORTFOLIO</span><span>2026 / IN</span></div>
           <div className="art-grid" aria-hidden="true" />
           <div className="art-orbit orbit-one" />
@@ -47,7 +47,31 @@ function Home() {
           <div className="art-sun" />
           <div className="art-monogram">ID<span>.</span></div>
           <div className="art-caption"><span>DESIGNING · BUILDING · LEARNING</span><span className="art-arrow">↗</span></div>
-        </div>
+        </div> */}
+        
+        
+<div className="hero-portrait">
+  <img
+    src="/images/ishansh.png"
+    alt="Portrait of Ishansh Dubey"
+    className="portrait-photo"
+  />
+
+  <div className="portrait-shade" />
+
+  <div className="portrait-topline">
+    <span>THE PERSON BEHIND THE CODE</span>
+    <span>01 / 01</span>
+  </div>
+
+  <div className="portrait-caption">
+    <span>ISHANSH DUBEY</span>
+    <span>MCA · SOFTWARE DEVELOPER</span>
+  </div>
+</div>
+
+
+
 
         <a className="scroll-cue" href="#about"><span>SCROLL TO EXPLORE</span><FaArrowDown /></a>
         <div className="hero-index"><span>01</span><i /> A WORK IN PROGRESS, ALWAYS.</div>
@@ -99,8 +123,20 @@ function Home() {
                 </Link>
                 <div className="home-project-meta"><span>PROJECT 0{index + 1}</span><span>{project.title}</span></div>
                 <h3>{project.title}</h3>
-                <p>{(project.description || "").split("\n")[0]}</p>
-                <Link className="text-link" to={`/project/${project.id}`}>Explore project <span>↗</span></Link>
+               <p>{(project.description || "").split("\n")[0]}</p>
+
+<div className="project-tech-list">
+  {(project.technologies || []).map((technology) => (
+    <span key={technology}>{technology}</span>
+  ))}
+</div>
+
+<Link
+  className="text-link"
+  to={`/project/${project.id}`}
+>
+  Explore project <span>↗</span>
+</Link>
               </article>
             ))}
           </div>

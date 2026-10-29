@@ -1,106 +1,222 @@
-// creating a constant variable called "projects"
-// this will store an array (list) of project objects
+// // creating a constant variable called "projects"
+// // this will store an array (list) of project objects
 
 const projects = [
-
-  // first project object
   {
     id: 1,
+    title: "AI Habit Tracker",
 
-    title: "OculusAI",
-
-    // short description shown on the project card
-    // description: "AI tool that converts long videos to shorts",
-
-    // full description shown on the project detail page
-    description: `OculusAI is an AI-powered video processing platform designed to automatically convert long-form video content into engaging short-form clips suitable for platforms like YouTube Shorts, Instagram Reels, and TikTok.
-
-The system allows users to upload long video files through a web interface. Once the video is uploaded, the backend processes the video using advanced AI and multimedia processing tools. Speech recognition models transcribe the audio content so the system can analyze spoken words and detect meaningful segments.
-
-After identifying key moments, the system automatically generates short clips by cutting the original video at the correct timestamps. These clips are optimized for vertical viewing formats and exported for social media platforms.
-
-This project demonstrates integration of machine learning with full-stack web development and video processing.
+    description: `An AI-powered habit tracking application built with the MERN stack and Google Gemini. It helps users build consistent routines, track daily habits, monitor streaks, and understand their progress.
 
 Key Features:
-• Upload long videos
-• AI speech-to-text transcription
-• Automatic clip generation
-• Export short-form videos
+• JWT-based authentication
+• Create, update, and organize habits
+• Daily progress and streak tracking
+• 90-day activity heatmap
+• Analytics and weekly AI reports
+• Personalized habit suggestions
+• AI streak recovery coach
+• Research dashboard with statistical visualizations
 
-Technologies Used:
-React, Next.js, TypeScript, Python, FastAPI, FFmpeg, Whisper AI, PyTorch`,
+Technologies:
+React, Node.js, Express, MongoDB, Google Gemini API`,
 
-    image: "/images/ai.jpg",
+    technologies: [
+      "React",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Google Gemini"
+    ],
 
-    github: "",
+    github:
+      "https://github.com/ishanshdubey-builds/AI-HABIT-TRACKER",
 
-    demo: "",
+    demo:
+      "https://ai-habit-tracker-lovat.vercel.app",
   },
 
-
-  // second project object
   {
     id: 2,
+    title: "Smart Task Manager",
 
-    title: "Doctor Appointment System",
-
-    // description: "Healthcare appointment management system",
-
-    description: `The Doctor Appointment Management System is a full-stack healthcare web application designed to simplify the process of booking medical appointments.
-
-Patients can register, log in, view available doctors, and schedule appointments based on available time slots. Doctors and administrators can manage schedules and patient records through a dashboard.
-
-This project demonstrates building a real-world healthcare application using a full-stack architecture.
+    description: `A full-stack productivity application designed to organize tasks, track progress, and improve daily productivity through a clean and interactive interface.
 
 Key Features:
-• Patient registration and login
-• Doctor listing by specialization
-• Appointment booking system
-• Patient medical records
-• Admin and doctor dashboards
+• Task management for today, upcoming, and past tasks
+• Productivity analytics
+• Daily streak tracking
+• Team task collaboration
+• Calendar integration
+• Login and registration
+• Dark mode interface
 
-Technologies Used:
-React.js, Java, REST APIs, MySQL, HTML, CSS`,
+Technologies:
+React, Tailwind CSS, Vite, Node.js, Express, MongoDB`,
 
-    image: "/images/doctor.jpg",
+    technologies: [
+      "React",
+      "Tailwind CSS",
+      "Node.js",
+      "Express",
+      "MongoDB"
+    ],
 
-    github: "",
+    github:
+      "https://github.com/ishanshdubey-builds/smart-task-manager",
 
-    demo: "",
+    demo:
+      "https://smart-task-manager-drab.vercel.app/",
   },
 
-
-  // third project object
   {
     id: 3,
+    title: "GameSense",
 
-    title: "Horror Escape Game",
+    description: `A gaming analytics platform starting with VALORANT, designed to explore gaming data through a dedicated web application.
 
-    // description: "3D horror puzzle escape game",
+The project combines a React and Vite frontend with a Node.js and Express backend, OpenAI integration, and PostgreSQL for its analytics-oriented functionality.
 
-    description: `Horror Escape Game is a 3D survival puzzle game where the player explores a haunted environment and solves puzzles to escape.
+Technologies:
+React, Vite, Node.js, Express, OpenAI API, PostgreSQL`,
 
-Players must navigate through dark environments, find hidden objects, unlock doors, and solve logic puzzles while experiencing suspenseful sound effects and atmospheric lighting.
+    technologies: [
+      "React",
+      "Vite",
+      "Node.js",
+      "Express",
+      "OpenAI API",
+      "PostgreSQL"
+    ],
 
-The goal is to create an immersive horror experience while demonstrating game development and interactive design skills.
-
-Key Features:
-• First-person player movement
-• Puzzle-solving mechanics
-• Interactive environment
-• Horror atmosphere with sound effects
-• Multiple escape challenges
-
-Technologies Used:
-Unreal Engine / Unity, C++ or C#, 3D environment design tools`,
-
-    image: "/images/horror.jpg",
-
+    // GameSense is currently a private repository.
+    // Add its GitHub URL here after making the repository public.
     github: "",
 
-    demo: "",
-  }
-
+    demo:
+      "https://game-sense-silk.vercel.app",
+  },
 ];
 
 export default projects;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const projects = [
+
+//   // first project object
+//   {
+//     id: 1,
+
+//     title: "OculusAI",
+
+//     // short description shown on the project card
+//     // description: "AI tool that converts long videos to shorts",
+
+//     // full description shown on the project detail page
+//     description: `OculusAI is an AI-powered video processing platform designed to automatically convert long-form video content into engaging short-form clips suitable for platforms like YouTube Shorts, Instagram Reels, and TikTok.
+
+// The system allows users to upload long video files through a web interface. Once the video is uploaded, the backend processes the video using advanced AI and multimedia processing tools. Speech recognition models transcribe the audio content so the system can analyze spoken words and detect meaningful segments.
+
+// After identifying key moments, the system automatically generates short clips by cutting the original video at the correct timestamps. These clips are optimized for vertical viewing formats and exported for social media platforms.
+
+// This project demonstrates integration of machine learning with full-stack web development and video processing.
+
+// Key Features:
+// • Upload long videos
+// • AI speech-to-text transcription
+// • Automatic clip generation
+// • Export short-form videos
+
+// Technologies Used:
+// React, Next.js, TypeScript, Python, FastAPI, FFmpeg, Whisper AI, PyTorch`,
+
+//     image: "/images/ai.jpg",
+
+//     github: "",
+
+//     demo: "",
+//   },
+
+
+//   // second project object
+//   {
+//     id: 2,
+
+//     title: "Doctor Appointment System",
+
+//     // description: "Healthcare appointment management system",
+
+//     description: `The Doctor Appointment Management System is a full-stack healthcare web application designed to simplify the process of booking medical appointments.
+
+// Patients can register, log in, view available doctors, and schedule appointments based on available time slots. Doctors and administrators can manage schedules and patient records through a dashboard.
+
+// This project demonstrates building a real-world healthcare application using a full-stack architecture.
+
+// Key Features:
+// • Patient registration and login
+// • Doctor listing by specialization
+// • Appointment booking system
+// • Patient medical records
+// • Admin and doctor dashboards
+
+// Technologies Used:
+// React.js, Java, REST APIs, MySQL, HTML, CSS`,
+
+//     image: "/images/doctor.jpg",
+
+//     github: "",
+
+//     demo: "",
+//   },
+
+
+//   // third project object
+//   {
+//     id: 3,
+
+//     title: "Horror Escape Game",
+
+//     // description: "3D horror puzzle escape game",
+
+//     description: `Horror Escape Game is a 3D survival puzzle game where the player explores a haunted environment and solves puzzles to escape.
+
+// Players must navigate through dark environments, find hidden objects, unlock doors, and solve logic puzzles while experiencing suspenseful sound effects and atmospheric lighting.
+
+// The goal is to create an immersive horror experience while demonstrating game development and interactive design skills.
+
+// Key Features:
+// • First-person player movement
+// • Puzzle-solving mechanics
+// • Interactive environment
+// • Horror atmosphere with sound effects
+// • Multiple escape challenges
+
+// Technologies Used:
+// Unreal Engine / Unity, C++ or C#, 3D environment design tools`,
+
+//     image: "/images/horror.jpg",
+
+//     github: "",
+
+//     demo: "",
+//   }
+
+// ];
+
+// export default projects;

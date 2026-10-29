@@ -16,6 +16,11 @@ function ProjectCard({ project, index = 0 }) {
         <div className="gallery-card-top"><span>PROJECT {String(index + 1).padStart(2, "0")}</span><span>{project.title}</span></div>
         <h2>{project.title}</h2>
         <p>{(project.description || "").split("\n")[0]}</p>
+        <div className="project-tech-list">
+  {(project.technologies || []).map((technology) => (
+    <span key={technology}>{technology}</span>
+  ))}
+</div>
         <Link className="text-link" to={`/project/${project.id}`}>View details <span>↗</span></Link>
       </div>
     </article>

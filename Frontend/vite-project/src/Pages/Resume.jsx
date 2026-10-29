@@ -16,7 +16,7 @@ function Resume() {
         <p className="eyebrow">Background & experience</p>
         <h1>A snapshot of<br /><span className="serif-accent">what I’m building.</span></h1>
         <p>A short overview of my education, technical toolkit, and project experience as I grow as a software developer.</p>
-        <a className="button" href="/resume.pdf" download>Download résumé <FaArrowDown /></a>
+        <a className="button" href="/resume.pdf" download>Download resume <FaArrowDown /></a>
       </div>
 
       <div className="resume-content">
