@@ -93,8 +93,6 @@ button:focus-visible, a:focus-visible { outline: 2px solid var(--accent); outlin
 .text-link { display: inline-flex; align-items: center; gap: 10px; color: var(--accent); font-size: 12px; font-weight: 800; }
 .text-link span { transition: transform .2s ease; }
 .text-link:hover span { transform: translate(3px, -3px); }
-.rule { height: 1px; width: 100%; background: var(--line); }
-
 .page-intro { padding: 82px 0 44px; }
 .page-intro h1 { max-width: 850px; font-size: clamp(42px, 7vw, 84px); line-height: .98; letter-spacing: -.075em; margin: 18px 0; }
 .page-intro p { max-width: 580px; color: var(--muted); line-height: 1.8; }
