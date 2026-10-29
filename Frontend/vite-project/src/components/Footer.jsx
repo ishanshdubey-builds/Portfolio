@@ -1,49 +1,19 @@
 import "./Footer.css";
-
-// importing icons
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
-function Footer(){
-
-    return(
-
-        <footer>
-
-            <div className="footer-content">
-
-               <p>© {new Date().getFullYear()} Ishansh Dubey</p>
-
-                <p>Built with React</p>
-
-                <div className="footer-links">
-
-                    <a
-                     href="https://github.com/"
-                     target="_blank"
-                     rel="noreferrer"
-                    >
-                        <FaGithub />
-                    </a>
-
-                    <a
-                     href="https://linkedin.com/"
-                     target="_blank"
-                     rel="noreferrer"
-                    >
-                        <FaLinkedin />
-                    </a>
-
-                    <a href="mailto:your@email.com">
-                        <FaEnvelope />
-                    </a>
-
-                </div>
-
-            </div>
-
-        </footer>
-
-    );
+function Footer() {
+  return (
+    <footer>
+      <div className="footer-content">
+        <p>© {new Date().getFullYear()} <strong>Ishansh Dubey</strong> · Designed with intention.</p>
+        <div className="footer-links" aria-label="Social links">
+          <a href="https://github.com/ishanshdubey-builds" target="_blank" rel="noreferrer" aria-label="GitHub"><FaGithub /></a>
+          <a href="https://www.linkedin.com/in/ishansh-dubey-877b3438b" target="_blank" rel="noreferrer" aria-label="LinkedIn"><FaLinkedin /></a>
+          <a href="mailto:ishansh.dubey@example.com" aria-label="Email"><FaEnvelope /></a>
+        </div>
+      </div>
+    </footer>
+  );
 }
 
 export default Footer;
