@@ -32,9 +32,9 @@ React, Next.js, TypeScript, Python, FastAPI, FFmpeg, Whisper AI, PyTorch`,
 
     image: "/images/ai.jpg",
 
-    github: "https://github.com/yourrepo",
+    github: "",
 
-    demo: "https://www.youtube.com/",
+    demo: "",
   },
 
 
@@ -64,9 +64,9 @@ React.js, Java, REST APIs, MySQL, HTML, CSS`,
 
     image: "/images/doctor.jpg",
 
-    github: "https://github.com/yourrepo",
+    github: "",
 
-    demo: "https://www.youtube.com/",
+    demo: "",
   },
 
 
@@ -96,9 +96,9 @@ Unreal Engine / Unity, C++ or C#, 3D environment design tools`,
 
     image: "/images/horror.jpg",
 
-    github: "https://github.com/yourrepo",
+    github: "",
 
-    demo: "https://www.youtube.com/",
+    demo: "",
   }
 
 ];
