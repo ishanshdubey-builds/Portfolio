@@ -1,11 +1,9 @@
-import { useMemo } from "react";
 import projects from "../data/projects";
 import ProjectCard from "../components/ProjectCard";
 import "./Projects.css";
 import "./Home.css";
 
 function Projects() {
-  const listedProjects = useMemo(() => projects, []);
   return (
     <div className="projects-page container">
       <div className="page-intro">
@@ -14,7 +12,7 @@ function Projects() {
         <p>Projects that helped me learn by building — from web applications to creative experiments. Open a project to read more about the idea, approach, and technology.</p>
       </div>
       <div className="projects-container">
-        {listedProjects.map((project, index) => <ProjectCard key={project.id} project={project} index={index} />)}
+        {projects.map((project, index) => <ProjectCard key={project.id} project={project} index={index} />)}
       </div>
     </div>
   );

@@ -39,18 +39,7 @@ function Home() {
           </div>
         </div>
 
-        {/* <div className="hero-art" aria-label="Abstract portfolio illustration">
-          <div className="art-topline"><span>PERSONAL PORTFOLIO</span><span>2026 / IN</span></div>
-          <div className="art-grid" aria-hidden="true" />
-          <div className="art-orbit orbit-one" />
-          <div className="art-orbit orbit-two" />
-          <div className="art-sun" />
-          <div className="art-monogram">ID<span>.</span></div>
-          <div className="art-caption"><span>DESIGNING · BUILDING · LEARNING</span><span className="art-arrow">↗</span></div>
-        </div> */}
-        
-        
-<div className="hero-portrait">
+        <div className="hero-portrait">
   <img
     src="/images/ishansh.png"
     alt="Portrait of Ishansh Dubey"
@@ -69,9 +58,6 @@ function Home() {
     <span>MCA · SOFTWARE DEVELOPER</span>
   </div>
 </div>
-
-
-
 
         <a className="scroll-cue" href="#about"><span>SCROLL TO EXPLORE</span><FaArrowDown /></a>
         <div className="hero-index"><span>01</span><i /> A WORK IN PROGRESS, ALWAYS.</div>

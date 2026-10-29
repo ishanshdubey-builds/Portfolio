@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { FaArrowDown, FaArrowUpRightFromSquare } from "react-icons/fa6";
+import { FaArrowDown } from "react-icons/fa6";
 import "./Resume.css";
 
 const skillGroups = [
