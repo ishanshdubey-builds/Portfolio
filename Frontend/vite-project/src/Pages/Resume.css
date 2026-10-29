@@ -1,39 +1,27 @@
-.resume-container{
-max-width:900px;
-margin:auto;
-padding:40px;
-color:white;
-}
-
-.resume-container{
-    
-
-    border-radius:15px;
-
-    background:rgba(0,0,0,0.3);  /* transparent glass */
-    backdrop-filter:blur(12px);
-
-    border:1px solid rgba(255,255,255,0.1);
-}
-
-.resume-section{
-margin-top:30px;
-}
-
-.resume-section h2{
-border-bottom:2px solid #444;
-padding-bottom:5px;
-}
-
-.resume-section ul{
-list-style:none;
-padding:0;
-}
-
-.resume-section li{
-margin-bottom:8px;
-}
-
-.resume-download{
-margin-top:40px;
+.resume-page { padding-bottom: 90px; }
+.resume-intro .button { margin-top: 18px; }
+.resume-content { border-top: 1px solid var(--line); }
+.resume-block { display: grid; grid-template-columns: .65fr 1.35fr; gap: 55px; padding: 35px 0 40px; border-bottom: 1px solid var(--line); }
+.resume-block-label { display: flex; gap: 18px; align-items: flex-start; }
+.resume-block-label > span { color: var(--accent); font: 10px var(--mono); padding-top: 5px; }
+.resume-block-label h2 { margin: 0; font-size: 20px; letter-spacing: -.04em; }
+.resume-block-body { min-width: 0; }
+.resume-summary { max-width: 650px; margin: 0; color: var(--muted); font-size: 13px; line-height: 2; }
+.resume-entry { display: flex; justify-content: space-between; align-items: flex-start; gap: 20px; }
+.resume-entry h3, .resume-projects h3 { margin: 0 0 8px; font-size: 14px; letter-spacing: -.02em; }
+.resume-entry p, .resume-projects p, .resume-skill-row p { margin: 0; color: var(--muted); font-size: 12px; line-height: 1.85; }
+.resume-date { color: var(--accent); font: 8px var(--mono); letter-spacing: .1em; white-space: nowrap; padding-top: 4px; }
+.resume-skill-row { display: grid; grid-template-columns: 140px 1fr; gap: 20px; padding: 14px 0; border-bottom: 1px solid var(--line); }
+.resume-skill-row:first-child { padding-top: 0; }
+.resume-skill-row:last-child { border-bottom: 0; padding-bottom: 0; }
+.resume-skill-row h3 { margin: 0; font-size: 12px; font-weight: 600; }
+.resume-projects { display: grid; gap: 22px; }
+.resume-projects article { padding-left: 17px; border-left: 1px solid var(--accent-deep); }
+.resume-endnote { display: flex; justify-content: space-between; align-items: center; gap: 20px; padding-top: 30px; }
+.resume-endnote p { color: var(--muted); font-size: 12px; }
+@media (max-width: 700px) {
+  .resume-block { grid-template-columns: 1fr; gap: 22px; }
+  .resume-entry { flex-direction: column; gap: 10px; }
+  .resume-skill-row { grid-template-columns: 1fr; gap: 6px; }
+  .resume-endnote { flex-direction: column; align-items: flex-start; }
 }
