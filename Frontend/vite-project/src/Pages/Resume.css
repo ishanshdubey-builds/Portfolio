@@ -25,3 +25,31 @@
   .resume-skill-row { grid-template-columns: 1fr; gap: 6px; }
   .resume-endnote { flex-direction: column; align-items: flex-start; }
 }
+
+/* Resume skill tags */
+.resume-skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.resume-skill-tags span,
+.resume-project-tech span {
+  border: 1px solid var(--line);
+  padding: 7px 9px;
+  color: var(--muted);
+  font-size: 10px;
+}
+
+/* Project technologies */
+.resume-project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: 12px;
+}
+
+.resume-projects .text-link {
+  margin-top: 12px;
+  font-size: 11px;
+}
