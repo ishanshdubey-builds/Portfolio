@@ -43,7 +43,7 @@ function Resume() {
           project experience as I grow as a software developer.
         </p>
 
-        <a className="button" href="/resume.pdf" download>
+        <a className="button" href="/IshanshResume.pdf" download>
           Download resume <FaArrowDown />
         </a>
       </div>
