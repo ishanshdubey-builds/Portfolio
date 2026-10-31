@@ -29,10 +29,10 @@ function ProjectDetail() {
           <h1>{project.title}</h1>
           <p className="project-detail-intro">{(project.description || "").split("\n")[0]}</p>
           <div className="project-tech-list">
-  {(project.technologies || []).map((technology) => (
-    <span key={technology}>{technology}</span>
-  ))}
-</div>
+            {(project.technologies || []).map((technology) => (
+              <span key={technology}>{technology}</span>
+            ))}
+          </div>
           <div className="project-detail-actions">
             {githubIsReal && <a className="button" href={project.github} target="_blank" rel="noreferrer">Source code <FaArrowUpRightFromSquare /></a>}
             {demoIsReal && <a className="button button-quiet" href={project.demo} target="_blank" rel="noreferrer">Live preview <FaArrowUpRightFromSquare /></a>}

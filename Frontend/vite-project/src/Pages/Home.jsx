@@ -109,20 +109,15 @@ function Home() {
                 </Link>
                 <div className="home-project-meta"><span>PROJECT 0{index + 1}</span><span>{project.title}</span></div>
                 <h3>{project.title}</h3>
-               <p>{(project.description || "").split("\n")[0]}</p>
-
-<div className="project-tech-list">
-  {(project.technologies || []).map((technology) => (
-    <span key={technology}>{technology}</span>
-  ))}
-</div>
-
-<Link
-  className="text-link"
-  to={`/project/${project.id}`}
->
-  Explore project <span>↗</span>
-</Link>
+                <p>{(project.description || "").split("\n")[0]}</p>
+                <div className="project-tech-list">
+                  {(project.technologies || []).map((technology) => (
+                    <span key={technology}>{technology}</span>
+                  ))}
+                </div>
+                <Link className="text-link" to={`/project/${project.id}`}>
+                  Explore project <span>↗</span>
+                </Link>
               </article>
             ))}
           </div>

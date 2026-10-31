@@ -1,16 +1,37 @@
-# React + Vite
+# Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A personal portfolio built with React and Vite.
 
-Currently, two official plugins are available:
+## Requirements
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Node.js 20.19+ or 22.12+
+- npm
 
-## React Compiler
+## Local development
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+From this directory:
 
-## Expanding the ESLint configuration
+```bash
+npm install
+npm run dev
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Validation
+
+```bash
+npm run build
+npm run lint
+```
+
+## Main structure
+
+- `src/Pages/Home.jsx` — home page, featured projects, skills, and introduction
+- `src/Pages/Projects.jsx` — project gallery
+- `src/Pages/ProjectDetail.jsx` — project details
+- `src/Pages/Resume.jsx` — résumé page
+- `src/Pages/Contact.jsx` — contact links
+- `src/components/` — shared navigation, footer, and project card
+- `src/data/projects.js` — project descriptions, links, and technology tags
+- `public/images/` — images used by the website
+
+Project cards and the detail pages read from the same data file, so update `src/data/projects.js` when adding or editing projects.
