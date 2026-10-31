@@ -40,21 +40,24 @@ function Home() {
         </div>
 
         <div className="hero-portrait">
-          <img
-            src="/images/ishansh.png"
-            alt="Portrait of Ishansh Dubey"
-            className="portrait-photo"
-          />
-          <div className="portrait-shade" />
-          <div className="portrait-topline">
-            <span>THE PERSON BEHIND THE CODE</span>
-            <span>01 / 01</span>
-          </div>
-          <div className="portrait-caption">
-            <span>ISHANSH DUBEY</span>
-            <span>MCA · SOFTWARE DEVELOPER</span>
-          </div>
-        </div>
+  <img
+    src="/images/ishansh.png"
+    alt="Portrait of Ishansh Dubey"
+    className="portrait-photo"
+  />
+
+  <div className="portrait-shade" />
+
+  {/* <div className="portrait-topline">
+    <span>THE PERSON BEHIND THE CODE</span>
+    <span>01 / 01</span>
+  </div> */}
+
+  <div className="portrait-caption">
+    <span>ISHANSH DUBEY</span>
+    <span>MCA · SOFTWARE DEVELOPER</span>
+  </div>
+</div>
 
         <a className="scroll-cue" href="#about"><span>SCROLL TO EXPLORE</span><FaArrowDown /></a>
         <div className="hero-index"><span>01</span><i /> A WORK IN PROGRESS, ALWAYS.</div>
